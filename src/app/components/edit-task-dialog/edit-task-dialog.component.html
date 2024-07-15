@@ -24,7 +24,7 @@
         <mat-select formControlName="status" panelClass="select-panel">
           @for (status of taskStatuses; track status) {
           <mat-option [value]="status">
-            {{ statusLabels[status] }}
+            {{ statusLabels[status -1] }}
           </mat-option>
           }
         </mat-select>
